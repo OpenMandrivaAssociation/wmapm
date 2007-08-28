@@ -58,7 +58,6 @@ EOF
 install -m 755 -d %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=WmApm
 Comment=Battery/Power status monitor for WindowMaker on laptops
 Exec=%{_bindir}/%{name}
