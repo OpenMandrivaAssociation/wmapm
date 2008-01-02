@@ -13,6 +13,7 @@ URL:		http://nis-www.lanl.gov/~mgh/
 BuildRequires:	libx11-devel
 BuildRequires:	libxpm-devel
 BuildRequires:	libxext-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 WMAPM monitors the APM statistics through the APM support in
