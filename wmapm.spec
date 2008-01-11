@@ -47,13 +47,6 @@ install -m 644 %SOURCE10 %buildroot%_miconsdir/%name.png
 install -m 644 %SOURCE11 %buildroot%_iconsdir/%name.png
 install -m 644 %SOURCE12 %buildroot%_liconsdir/%name.png
 
-install -m 755 -d %buildroot%_menudir
-cat << EOF > %buildroot%_menudir/%name
-?package(%{name}):command="%_bindir/%name" icon="%name.png"\\
-                 needs="X11" section="System/Monitoring" title="WmApm"\\
-                 longtitle="Battery/Power status monitor in a small icon" \\
-                 xdg="true"
-EOF
 
 install -m 755 -d %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop <<EOF
@@ -87,7 +80,6 @@ EOF
 %_liconsdir/%name.png
 %_miconsdir/%name.png
 %_iconsdir/%name.png
-%_menudir/%name
 %{_datadir}/applications/mandriva-%{name}.desktop
 %_mandir/man1/*
 
