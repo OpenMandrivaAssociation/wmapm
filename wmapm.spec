@@ -1,7 +1,7 @@
 Summary:  Battery/Power status monitor for WindowMaker on laptops
 Name:		wmapm
 Version:	3.1
-Release:	%mkrel 12
+Release:	%mkrel 13
 License:	GPL
 Group:		Graphical desktop/WindowMaker
 Source0:	%{name}-%{version}.tar.bz2
