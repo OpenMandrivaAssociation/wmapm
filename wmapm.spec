@@ -10,9 +10,9 @@ Source10:		wmapm-16x16.png
 Source11:		wmapm-32x32.png
 Source12:		wmapm-48x48.png
 URL:		http://nis-www.lanl.gov/~mgh/
-BuildRequires:	libx11-devel
-BuildRequires:	libxpm-devel
-BuildRequires:	libxext-devel
+BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(xpm)
+BuildRequires:	pkgconfig(xext)
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
