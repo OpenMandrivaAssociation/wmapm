@@ -10,6 +10,7 @@ Source10:		wmapm-16x16.png
 Source11:		wmapm-32x32.png
 Source12:		wmapm-48x48.png
 URL:		https://nis-www.lanl.gov/~mgh/
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xpm)
 BuildRequires:	pkgconfig(xext)
